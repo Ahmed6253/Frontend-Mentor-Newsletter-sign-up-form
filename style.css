@@ -1,0 +1,171 @@
+:root {
+  --tomato: hsl(4, 100%, 67%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  transition: 0.3s;
+}
+
+body {
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background-color: var(--charcoal-grey);
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  margin: auto;
+  max-width: 1440px;
+  display: flex;
+  padding: 20px;
+  border-radius: 30px;
+  color: var(--dark-slate-grey);
+}
+
+.form {
+  padding: 70px 50px;
+  width: 380px;
+}
+
+.form h1 {
+  margin: 0 0 25px 0;
+  font-size: 55px;
+}
+
+.form > p {
+  margin: 0 0 25px 0;
+  font-weight: 400;
+}
+
+.form-img2 {
+  display: none;
+}
+
+li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+li p {
+  height: 21px;
+}
+
+li img {
+  margin-right: 15px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding-inline-start: 0px;
+}
+
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#email {
+  height: 55px;
+  padding-left: 20px;
+  border-radius: 10px;
+  border: solid rgba(128, 128, 128, 0.534) 1px;
+  margin-bottom: 25px;
+}
+
+.alert {
+  color: var(--tomato);
+  display: none;
+  width: 100px;
+  font-size: 11px;
+  font-weight: 700;
+  right: 530px;
+  z-index: 1;
+}
+
+.btn {
+  height: 55px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--dark-slate-grey);
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 76, 134, 1) 0%,
+    rgba(255, 98, 87, 1) 43%
+  );
+}
+
+.confirmation {
+  max-width: 400px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px;
+}
+
+.confirmation img {
+  width: 60px;
+}
+
+.confirmation h1 {
+  margin: 25px 0;
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.confirmation p {
+  margin: 0 0 35px 0;
+  line-height: 25px;
+}
+
+.confirmation span {
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  body {
+    height: 100%;
+  }
+
+  .form-img1 {
+    display: none;
+  }
+  .form-img2 {
+    display: block;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
